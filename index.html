@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WordFreq プライバシーポリシー</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 64px;
+        background: #ffffff;
+        color: #1f2937;
+        font: 15px/1.85 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+      .updated { margin: 0 0 28px; color: #9ca3af; font-size: 12px; }
+      h2 { font-size: 17px; margin: 36px 0 10px; }
+      p { margin: 0 0 12px; }
+      table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 14px; }
+      th, td { padding: 8px 10px; border: 1px solid #e5e7eb; text-align: left; vertical-align: top; }
+      th { background: #f9fafb; font-weight: 600; }
+      ul { margin: 0 0 12px; padding-left: 22px; }
+      li { margin: 2px 0; }
+      code { font-size: 13px; background: #f3f4f6; padding: 1px 5px; border-radius: 4px; }
+      a { color: #2563eb; }
+      footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>WordFreq プライバシーポリシー</h1>
+      <p class="updated">最終更新日: 2026年11月3日</p>
+
+      <p>
+        WordFreq（以下「本拡張機能」）は、選択した英単語の使用頻度を表示する Chrome 拡張機能です。
+        本拡張機能は、取り扱う情報をすべて利用者の端末内で処理し、外部へ送信しません。
+      </p>
+
+      <h2>1. 取り扱う情報</h2>
+      <p>
+        本拡張機能は、機能の提供のために次の情報を取り扱います。いずれも端末内（<code>chrome.storage.local</code>）にのみ保存され、外部へ送信されません。
+      </p>
+      <table>
+        <thead>
+          <tr><th>情報</th><th>内容</th><th>保存</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>選択した文字列</td>
+            <td>頻度を調べるために、利用者が選択した文字列を読み取ります</td>
+            <td>調べた語として履歴に保存</td>
+          </tr>
+          <tr>
+            <td>設定</td>
+            <td>自動表示のオン/オフ、サイトごとの表示設定、表示モード</td>
+            <td>保存する</td>
+          </tr>
+          <tr>
+            <td>履歴</td>
+            <td>調べた単語、その頻度（Zipf 値）、順位、時刻。最大50件</td>
+            <td>保存する</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>アクセス解析・広告・トラッキングは行いません。</p>
+
+      <h2>2. ページの内容の扱い</h2>
+      <p>
+        本拡張機能は、利用者が選択した文字列だけを読み取ります。ページ全体の内容を読み取ったり保存したりすることはありません。
+        読み取った文字列は、同梱の頻度データと照合するためだけに使用します。
+      </p>
+
+      <h2>3. 保存した情報の削除</h2>
+      <p>
+        履歴はポップアップの「消す」から削除できます。設定を含むすべての保存データは、ブラウザの拡張機能データの削除、または本拡張機能のアンインストールで削除されます。
+      </p>
+
+      <h2>4. 第三者への提供</h2>
+      <p>本拡張機能は、取り扱う情報を第三者へ提供しません。外部のサーバーとの通信も行いません。</p>
+
+      <h2>5. 権限の利用目的</h2>
+      <table>
+        <thead>
+          <tr><th>権限</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>storage</code></td><td>設定と履歴をブラウザ内に保存するため</td></tr>
+          <tr><td><code>contextMenus</code></td><td>右クリックメニュー（頻度の表示、サイトごとのオン/オフ）のため</td></tr>
+          <tr><td>すべてのサイトへのアクセス</td><td>任意のページで選択を検知し、カードを表示するため</td></tr>
+        </tbody>
+      </table>
+
+      <h2>6. Limited Use（限定的な使用）</h2>
+      <p>本拡張機能によるデータの取り扱いは、Chrome Web Store のユーザーデータポリシーに定める Limited Use の要件に従います。</p>
+      <ul>
+        <li>データは、単一の目的（選択した単語の頻度表示）を提供するためだけに使用します</li>
+        <li>広告の配信、プロファイリング、データの販売を行いません</li>
+        <li>開発者を含む人間が、利用者のデータを読み取ることはありません</li>
+        <li>法令に基づく場合を除き、第三者へ転送しません</li>
+      </ul>
+
+      <h2>7. お問い合わせ</h2>
+      <p>本ポリシーに関するお問い合わせは、以下までお願いします。</p>
+      <p>メール: <a href="mailto:miharu9047@gmail.com">miharu9047@gmail.com</a></p>
+
+      <h2>8. 改定</h2>
+      <p>本ポリシーを変更する場合は、本ページを更新し、最終更新日を改めます。</p>
+
+      <footer>WordFreq — Chrome 拡張機能のプライバシーポリシー</footer>
+    </main>
+  </body>
+</html>
