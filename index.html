@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LexiFreq プライバシーポリシー</title>
+    <title>LexiFreq Privacy Policy / プライバシーポリシー</title>
     <style>
       :root { color-scheme: light; }
       * { box-sizing: border-box; }
@@ -27,89 +27,181 @@
       code { font-size: 13px; background: #f3f4f6; padding: 1px 5px; border-radius: 4px; }
       a { color: #2563eb; }
       footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 12px; }
+      .langs { display: flex; gap: 10px; margin: 0 0 24px; font-size: 13px; color: #9ca3af; }
+      .langs a { text-decoration: none; }
+      .langs a:hover { text-decoration: underline; }
+      section[lang="en"] { margin-top: 56px; padding-top: 32px; border-top: 1px solid #e5e7eb; }
     </style>
   </head>
   <body>
     <main>
-      <h1>LexiFreq プライバシーポリシー</h1>
-      <p class="updated">最終更新日: 2026年11月3日</p>
+      <nav class="langs"><a href="#ja">日本語</a><span>·</span><a href="#en">English</a></nav>
 
-      <p>
-        LexiFreq（以下「本拡張機能」）は、選択した英単語の使用頻度を表示する Chrome 拡張機能です。
-        本拡張機能は、取り扱う情報をすべて利用者の端末内で処理し、外部へ送信しません。
-      </p>
+      <section id="ja" lang="ja">
+        <h1>LexiFreq プライバシーポリシー</h1>
+        <p class="updated">最終更新日: 2026年11月19日</p>
 
-      <h2>1. 取り扱う情報</h2>
-      <p>
-        本拡張機能は、機能の提供のために次の情報を取り扱います。いずれも端末内（<code>chrome.storage.local</code>）にのみ保存され、外部へ送信されません。
-      </p>
-      <table>
-        <thead>
-          <tr><th>情報</th><th>内容</th><th>保存</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>選択した文字列</td>
-            <td>頻度を調べるために、利用者が選択した文字列を読み取ります</td>
-            <td>調べた語として履歴に保存</td>
-          </tr>
-          <tr>
-            <td>設定</td>
-            <td>自動表示のオン/オフ、サイトごとの表示設定、表示モード</td>
-            <td>保存する</td>
-          </tr>
-          <tr>
-            <td>履歴</td>
-            <td>調べた単語、その頻度（Zipf 値）、順位、時刻。最大50件</td>
-            <td>保存する</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>アクセス解析・広告・トラッキングは行いません。</p>
+        <p>
+          LexiFreq（以下「本拡張機能」）は、選択した英単語の使用頻度を表示する Chrome 拡張機能です。
+          本拡張機能は、取り扱う情報をすべて利用者の端末内で処理し、外部へ送信しません。
+        </p>
 
-      <h2>2. ページの内容の扱い</h2>
-      <p>
-        本拡張機能は、利用者が選択した文字列だけを読み取ります。ページ全体の内容を読み取ったり保存したりすることはありません。
-        読み取った文字列は、同梱の頻度データと照合するためだけに使用します。
-      </p>
+        <h2>1. 取り扱う情報</h2>
+        <p>
+          本拡張機能は、機能の提供のために次の情報を取り扱います。いずれも端末内（<code>chrome.storage.local</code>）にのみ保存され、外部へ送信されません。
+        </p>
+        <table>
+          <thead>
+            <tr><th>情報</th><th>内容</th><th>保存</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>選択した文字列</td>
+              <td>頻度を調べるために、利用者が選択した文字列を読み取ります</td>
+              <td>調べた語として履歴に保存</td>
+            </tr>
+            <tr>
+              <td>設定</td>
+              <td>自動表示のオン/オフ、サイトごとの表示設定、表示モード</td>
+              <td>保存する</td>
+            </tr>
+            <tr>
+              <td>履歴</td>
+              <td>調べた単語、その頻度（Zipf 値）、順位、時刻。最大50件</td>
+              <td>保存する</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>アクセス解析・広告・トラッキングは行いません。</p>
 
-      <h2>3. 保存した情報の削除</h2>
-      <p>
-        履歴はポップアップの「消す」から削除できます。設定を含むすべての保存データは、ブラウザの拡張機能データの削除、または本拡張機能のアンインストールで削除されます。
-      </p>
+        <h2>2. ページの内容の扱い</h2>
+        <p>
+          本拡張機能は、利用者が選択した文字列だけを読み取ります。ページ全体の内容を読み取ったり保存したりすることはありません。
+          読み取った文字列は、同梱の頻度データと照合するためだけに使用します。
+        </p>
 
-      <h2>4. 第三者への提供</h2>
-      <p>本拡張機能は、取り扱う情報を第三者へ提供しません。外部のサーバーとの通信も行いません。</p>
+        <h2>3. 保存した情報の削除</h2>
+        <p>
+          履歴はポップアップの「消す」から削除できます。設定を含むすべての保存データは、ブラウザの拡張機能データの削除、または本拡張機能のアンインストールで削除されます。
+        </p>
 
-      <h2>5. 権限の利用目的</h2>
-      <table>
-        <thead>
-          <tr><th>権限</th><th>用途</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><code>storage</code></td><td>設定と履歴をブラウザ内に保存するため</td></tr>
-          <tr><td><code>contextMenus</code></td><td>右クリックメニュー（頻度の表示、サイトごとのオン/オフ）のため</td></tr>
-          <tr><td>すべてのサイトへのアクセス</td><td>任意のページで選択を検知し、カードを表示するため</td></tr>
-        </tbody>
-      </table>
+        <h2>4. 第三者への提供</h2>
+        <p>本拡張機能は、取り扱う情報を第三者へ提供しません。外部のサーバーとの通信も行いません。</p>
 
-      <h2>6. Limited Use（限定的な使用）</h2>
-      <p>本拡張機能によるデータの取り扱いは、Chrome Web Store のユーザーデータポリシーに定める Limited Use の要件に従います。</p>
-      <ul>
-        <li>データは、単一の目的（選択した単語の頻度表示）を提供するためだけに使用します</li>
-        <li>広告の配信、プロファイリング、データの販売を行いません</li>
-        <li>開発者を含む人間が、利用者のデータを読み取ることはありません</li>
-        <li>法令に基づく場合を除き、第三者へ転送しません</li>
-      </ul>
+        <h2>5. 権限の利用目的</h2>
+        <table>
+          <thead>
+            <tr><th>権限</th><th>用途</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>storage</code></td><td>設定と履歴をブラウザ内に保存するため</td></tr>
+            <tr><td><code>contextMenus</code></td><td>右クリックメニュー（頻度の表示、サイトごとのオン/オフ）のため</td></tr>
+            <tr><td>すべてのサイトへのアクセス</td><td>任意のページで選択を検知し、カードを表示するため</td></tr>
+          </tbody>
+        </table>
 
-      <h2>7. お問い合わせ</h2>
-      <p>本ポリシーに関するお問い合わせは、以下までお願いします。</p>
-      <p>メール: <a href="mailto:miharu9047@gmail.com">miharu9047@gmail.com</a></p>
+        <h2>6. Limited Use（限定的な使用）</h2>
+        <p>本拡張機能によるデータの取り扱いは、Chrome Web Store のユーザーデータポリシーに定める Limited Use の要件に従います。</p>
+        <ul>
+          <li>データは、単一の目的（選択した単語の頻度表示）を提供するためだけに使用します</li>
+          <li>広告の配信、プロファイリング、データの販売を行いません</li>
+          <li>開発者を含む人間が、利用者のデータを読み取ることはありません</li>
+          <li>法令に基づく場合を除き、第三者へ転送しません</li>
+        </ul>
 
-      <h2>8. 改定</h2>
-      <p>本ポリシーを変更する場合は、本ページを更新し、最終更新日を改めます。</p>
+        <h2>7. お問い合わせ</h2>
+        <p>本ポリシーに関するお問い合わせは、以下までお願いします。</p>
+        <p>メール: <a href="mailto:miharu9047@gmail.com">miharu9047@gmail.com</a></p>
 
-      <footer>LexiFreq — Chrome 拡張機能のプライバシーポリシー</footer>
+        <h2>8. 改定</h2>
+        <p>本ポリシーを変更する場合は、本ページを更新し、最終更新日を改めます。</p>
+      </section>
+
+      <section id="en" lang="en">
+        <h1>LexiFreq Privacy Policy</h1>
+        <p class="updated">Last updated: November 19, 2026</p>
+
+        <p>
+          LexiFreq ("the extension") is a Chrome extension that shows how often a selected English word appears.
+          The extension processes all information locally on your device and never sends it anywhere.
+        </p>
+
+        <h2>1. Information handled</h2>
+        <p>
+          The extension handles the following information to provide its features. It is stored only on your device
+          (<code>chrome.storage.local</code>) and is never sent anywhere.
+        </p>
+        <table>
+          <thead>
+            <tr><th>Information</th><th>Details</th><th>Storage</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Selected text</td>
+              <td>Reads the text you select so it can look up its frequency</td>
+              <td>Saved to history as a looked-up word</td>
+            </tr>
+            <tr>
+              <td>Settings</td>
+              <td>Automatic display on/off, per-site setting, display mode</td>
+              <td>Saved</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td>Looked-up words, their frequency (Zipf value), rank and time. Up to 50 entries</td>
+              <td>Saved</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>No analytics, advertising or tracking.</p>
+
+        <h2>2. How page content is handled</h2>
+        <p>
+          The extension reads only the text you select. It never reads or stores the rest of the page.
+          The selected text is used only to match the bundled frequency data.
+        </p>
+
+        <h2>3. Deleting stored information</h2>
+        <p>
+          You can clear the history with "Clear" in the popup. All stored data, including settings, is deleted when
+          you clear the extension's data in the browser or uninstall the extension.
+        </p>
+
+        <h2>4. Third parties</h2>
+        <p>The extension does not share the information it handles with third parties, and it makes no network requests.</p>
+
+        <h2>5. Permissions</h2>
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>storage</code></td><td>Save settings and history in the browser</td></tr>
+            <tr><td><code>contextMenus</code></td><td>Provide the right-click menu (show frequency, per-site on/off)</td></tr>
+            <tr><td>Access to all sites</td><td>Detect selections and show the card on any page</td></tr>
+          </tbody>
+        </table>
+
+        <h2>6. Limited Use</h2>
+        <p>
+          The extension's handling of data complies with the Limited Use requirements of the Chrome Web Store User
+          Data Policy.
+        </p>
+        <ul>
+          <li>Data is used only to provide the extension's single purpose (showing word frequency).</li>
+          <li>No advertising, profiling, or selling of data.</li>
+          <li>No humans, including the developer, read your data.</li>
+          <li>No transfer to third parties except as required by law.</li>
+        </ul>
+
+        <h2>7. Contact</h2>
+        <p>Questions about this policy: <a href="mailto:miharu9047@gmail.com">miharu9047@gmail.com</a></p>
+
+        <h2>8. Changes</h2>
+        <p>If this policy changes, this page will be updated and the last-updated date revised.</p>
+      </section>
+
+      <footer>LexiFreq — Chrome extension privacy policy / プライバシーポリシー</footer>
     </main>
   </body>
 </html>
